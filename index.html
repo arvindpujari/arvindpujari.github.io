@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/477px-Cambridge_University_Crest_-_flat.png">
+  <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxk_J6vnhmD6DC7LzEqvCu7a29Aibjdt5eFrNXu7FviFb9AHiOJckeVkyg&s=10">
 	
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170058434-1"></script>
@@ -98,60 +98,191 @@
             </td>
           </tr>
         </tbody></table>
+<!-- Replace the complete existing News table with this snippet. -->
+<style>
+/* Add to stylesheet.css, or keep the style block in the HTML snippet. */
+.news-list {
+  list-style: none;
+  padding-left: 20px;
+  margin: 16px 0;
+}
+.news-list li {
+  display: grid;
+  grid-template-columns: 8px 90px minmax(0, 1fr);
+  column-gap: 8px;
+  margin-bottom: 6px;
+  line-height: 1.5;
+  font-style: normal;
+}
+.news-list li::before { content: "•"; }
+.news-list .news-date { font-weight: bold; white-space: nowrap; }
+.news-list .news-text { min-width: 0; }
+@media (max-width: 480px) {
+  .news-list { padding-left: 0; }
+  .news-list li { grid-template-columns: 8px 80px minmax(0, 1fr); column-gap: 6px; }
+}
+</style>
+<table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:auto">
+  <tbody>
+    <tr>
+      <td style="padding:20px;width:100%;vertical-align:middle">
+        <heading style="color:blue">News</heading>
+        <ul class="news-list">
+        <li>
+          <span class="news-date">(Aug 2026)</span>
+          <span class="news-text">I will be starting an independent research group at <a href="https://www.tohoku.ac.jp/en/" target="_blank" rel="noopener noreferrer">Tohoku University</a> as a Tenure-Track Assistant Professor!</span>
+        </li>
 
-	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading style="color:Blue;">News</heading>
-              <ul>
-		  <li><b>(Aug 2026)</b>&ensp;I will be starting an independent research group at <a href="https://www.tohoku.ac.jp/en/" target="_blank" rel="noopener noreferrer">Tohoku University</a> as a Tenure-Track Assistant Professor!
+        <li>
+          <span class="news-date">(May 2026)</span>
+          <span class="news-text">The last paper from my PhD was published in <i>Energy &amp; Environmental Science</i>, showcasing a new optical method to study batteries</span>
+        </li>
 
-		  <li><b>(May 2026)</b>&ensp;The last paper from my PhD was published in <i>Energy & Environmental Science</i>, showcasing a new optical method to study batteries
-			  
-		  <li><b>(Feb 2026)</b>&ensp;A collaborative first-author paper between  <a href="https://illumion.io/" target="_blank" rel="noopener noreferrer">Illumion</a> and <a href="https://www.wacker.com/cms/en-us/home/home.html" target="_blank" rel="noopener noreferrer">Wacker Gmbh</a> was published in the <i>Journal of the Electochemical Society</li>
-		 
-		  <li><b>(Mar 2025)</b>&ensp;The results of my JSPS Summer Fellowship were published in the <i>Journal of the Electrochemical Society</i> (with Science Tokyo and Lasertec Co.)
+        <li>
+          <span class="news-date">(Feb 2026)</span>
+          <span class="news-text">A collaborative first-author paper between  <a href="https://illumion.io/" target="_blank" rel="noopener noreferrer">Illumion</a> and <a href="https://www.wacker.com/cms/en-us/home/home.html" target="_blank" rel="noopener noreferrer">Wacker Gmbh</a> was published in the <i>Journal of the Electrochemical Society</i></span>
+        </li>
 
-		  <li><b>(Mar 2025)</b>&ensp;Our perspective on photobatteries was published in <i>Joule</i>!
+        <li>
+          <span class="news-date">(Mar 2025)</span>
+          <span class="news-text">The results of my JSPS Summer Fellowship were published in the <i>Journal of the Electrochemical Society</i> (with Science Tokyo and Lasertec Co.)</span>
+        </li>
 
-		  <li><b>(Feb 2025)</b>&ensp;I have joined  <a href="https://illumion.io/" target="_blank" rel="noopener noreferrer">Illumion</a>, a Cambridge University spinout as an R&D Scientist</i>!</li>
+        <li>
+          <span class="news-date">(Mar 2025)</span>
+          <span class="news-text">Our perspective on photobatteries was published in <i>Joule</i>!</span>
+        </li>
 
-		  <li><b>(Dec 2024)</b>&ensp;I have submitted my PhD thesis!</i>!</li>
+        <li>
+          <span class="news-date">(Feb 2025)</span>
+          <span class="news-text">I have joined  <a href="https://illumion.io/" target="_blank" rel="noopener noreferrer">Illumion</a>, a Cambridge University spinout as an R&amp;D Scientist!</span>
+        </li>
 
-		  <li><b>(Jul 2024)</b>&ensp;First author paper on the physics of photobatteries published in <i>ACS Energy Letters</i>!</li>
+        <li>
+          <span class="news-date">(Dec 2024)</span>
+          <span class="news-text">I have submitted my PhD thesis!</span>
+        </li>
 
-		  <li><b>(Jun 2024)</b>&ensp;Spending 3 months at the Tokyo Institute of Technology through a JSPS Summer Fellowship</li>
+        <li>
+          <span class="news-date">(Jul 2024)</span>
+          <span class="news-text">First author paper on the physics of photobatteries published in <i>ACS Energy Letters</i>!</span>
+        </li>
 
-		  <li><b>(May 2024)</b>&ensp;First author paper on the design of optical batteries published in <i>Small Methods</i>!</li>
+        <li>
+          <span class="news-date">(Jun 2024)</span>
+          <span class="news-text">Spending 3 months at the Tokyo Institute of Technology through a JSPS Summer Fellowship</span>
+        </li>
 
-		  <li><b>(Oct 2023)</b>&ensp;First author paper on thermal contributions to aqueous photobatteries published in <i>ACS Energy Letters</i>!</li>
+        <li>
+          <span class="news-date">(May 2024)</span>
+          <span class="news-text">First author paper on the design of optical batteries published in <i>Small Methods</i>!</span>
+        </li>
 
-		  <li><b>(Jul 2023)</b>&ensp;Gave a talk on the fundamental studies of mechanisms of photobatteries at MC16 at Dublin.</li>
+        <li>
+          <span class="news-date">(Oct 2023)</span>
+          <span class="news-text">First author paper on thermal contributions to aqueous photobatteries published in <i>ACS Energy Letters</i>!</span>
+        </li>
 
-		  <li><b>(Sep 2021)</b>&ensp;Completed my masters with a distinction! Onto the PhD!</li>
-               
-  		  <li><b>(Aug 2021)</b>&ensp;<a href="https://www.sciencedirect.com/science/article/pii/S2589152921001861?via%3Dihub" target="_blank" rel="noopener noreferrer">Paper</a> on effective refractive indexes of core-shell plasmonic nanoparticles published in <i>Materialia</i></li>
-               
-  		  <li><b>(May 2021)</b>&ensp;Joined <a href="https://www.phy.cam.ac.uk/directory/greenhamn" target="_blank" rel="noopener noreferrer">Neil Greenham's</a>/<a href="https://www.ifm.eng.cam.ac.uk/people/mfld2/" target="_blank" rel="noopener noreferrer">Michael De Volder's</a> groups (<a href="https://www.phy.cam.ac.uk/" target="_blank" rel="noopener noreferrer">Physics</a>/<a href="http://www.eng.cam.ac.uk/" target="_blank" rel="noopener noreferrer">Engineering</a>) for my PhD project on light-rechargeable photobatteries</li>
-          <li><b>(Jan 2021)</b>&emsp;Joining <a href="http://www.eng.cam.ac.uk/profiles/sh315" target="_blank" rel="noopener noreferrer">Stephan Hoffman's</a> group (ElecEng) for a lab-rotation on the characterization of 2D materials </li>
-  		  <li><b>(Jan 2021)</b>&emsp;First author <a href="https://www.sciencedirect.com/science/article/pii/S2214993721000051?via%3Dihub" target="_blank" rel="noopener noreferrer">paper</a> on light-trapping in solar cells by Al-alloy plasmonic nanoparticles  published in <i>Sustainable Materials and Technologies</i> </li>
-		  <li><b>(Nov 2020)</b>&ensp;Joining the groups of <a href="https://www.ceb.cam.ac.uk/directory/roisin-owens" target="_blank" rel="noopener noreferrer">Roisin Owens</a> (<a href="https://www.ceb.cam.ac.uk/" target="_blank" rel="noopener noreferrer">ChemEng</a>) and <a href="https://www.ch.cam.ac.uk/person/tpjk2" target="_blank" rel="noopener noreferrer">Tuomas Knowles</a> (<a href="https://www.ch.cam.ac.uk/" target="_blank" rel="noopener noreferrer">Chemistry</a>) for a lab-rotation on microfluidics for exosome detection</li>
-  		  <li><b>(Nov 2020)</b>&ensp;One of only 8 receipients of the <a href="https://www.inae.in/innovative-student-projects-award/" target="_blank" rel="noopener noreferrer"><b>INAE Innovative Student Project Award</b></a> for my undergraduate thesis!</li>
-          <li><b>(Sep 2020)</b>&ensp;Joined the University of Cambridge for an <a href="https://www.postgraduate.study.cam.ac.uk/courses/directory/pcphpdnst#:~:text=The%20vision%20of%20this%20MRes,interactions%20that%20support%20our%20vision." target="_blank" rel="noopener noreferrer">MRes+PhD in Nanoscience and Nanotechnology!</a></li>
-          <li><b>(Sep 2020)</b>&ensp;Graduated from IIT Madras with a CGPA of 8.90. Phew!</li>
-		  <li><b>(Sep 2020)</b>&ensp;Received the <b>B. Krishnamurty Silver Medal</b> for the best undergraduate <a href="data/BTech Thesis_Arvind_Pujari_MM16B017 - Revision - June.pdf" target="_blank" rel="noopener noreferrer">thesis</a> in Metallurgical and Materials Engineering at IIT Madras!</li>
-		  <li><b>(Sep 2020)</b>&ensp;Received the <a href="data/sdsp.jpeg" target="_blank" rel="noopener noreferrer"><b>Shankar Dayal Sharma Gold Medal</b></a> for the best all-round performance by an undergrad at IIT Madras between 2016-2020!</li>
-		  <li><b>(Jul 2020)</b>&emsp;First author <a href="https://www.sciencedirect.com/science/article/pii/S0254058420307860?via%3Dihub" target="_blank" rel="noopener noreferrer">paper</a> on the plasmonic properties of Al-Cu core-shell nanoparticles published in <i>Materials Chemistry and Physics</i></li>
-          <li><b>(Jun 2020)</b>&ensp;Defended my undergraduate <a href="data/BTech Thesis_Arvind_Pujari_MM16B017 - Revision - June.pdf" target="_blank" rel="noopener noreferrer">thesis</a> on modelling Al-based plasmonics at IIT Madras!</li>
-		  <li><b>(May 2019)</b>&ensp;Spending a summer at <a href="https://www.warsinger.com/" target="_blank" rel="noopener noreferrer">David Warsinger's</a> group at Purdue <a href="https://engineering.purdue.edu/ME" target="_blank" rel="noopener noreferrer">(MechEng)</a> working on inverse opals nanomembranes</li>
-          <li><b>(Apr 2017)</b>&ensp;<a href="https://epaper.timesgroup.com/Olive/ODN/TimesOfIndia/shared/ShowArticle.aspx?doc=TOICH%2F2017%2F11%2F13&entity=Ar02301&sk=9EAE57B0&mode=text#" target="_blank" rel="noopener noreferrer">Work</a> on self-segrating smart dustbins featured in the Chennai Times!</li>
-		  <li><b>(May 2018)</b>&ensp;Spending a summer at <a href="https://www.kabeerjasuja.com/" target="_blank" rel="noopener noreferrer">Kabeer Jasuja's</a> group at IIT GN (<a href="https://iitgn.ac.in/academics/che/" target="_blank" rel="noopener noreferrer">(ChemEng)</a>) working on carbon quantum dots for mercury detection!</li>
-          <li><b>(Apr 2017)</b>&ensp;<a href="https://timesofindia.indiatimes.com/home/education/five-iit-students-come-up-with-tech-that-fights-germs-and-cleans-toilet/articleshow/57952405.cms" target="_blank" rel="noopener noreferrer">Work</a> on a mechanism for toilet seat sanitation featured in the Times of India!</li>
-	       <li><b>(Mar 2017)</b>&ensp;Part of a team which received the <a href="https://gyti.techpedia.in/" target="_blank" rel="noopener noreferrer">GYTI Award</a> from the Government of India for our mechanism for toilet seat sanitation</li>
-               </ul>
-            </td>
-          </tr>
-        </tbody></table>
+        <li>
+          <span class="news-date">(Jul 2023)</span>
+          <span class="news-text">Gave a talk on the fundamental studies of mechanisms of photobatteries at MC16 at Dublin.</span>
+        </li>
+
+        <li>
+          <span class="news-date">(Sep 2021)</span>
+          <span class="news-text">Completed my masters with a distinction! Onto the PhD!</span>
+        </li>
+
+        <li>
+          <span class="news-date">(Aug 2021)</span>
+          <span class="news-text"><a href="https://www.sciencedirect.com/science/article/pii/S2589152921001861?via%3Dihub" target="_blank" rel="noopener noreferrer">Paper</a> on effective refractive indexes of core-shell plasmonic nanoparticles published in <i>Materialia</i></span>
+        </li>
+
+        <li>
+          <span class="news-date">(May 2021)</span>
+          <span class="news-text">Joined <a href="https://www.phy.cam.ac.uk/directory/greenhamn" target="_blank" rel="noopener noreferrer">Neil Greenham's</a>/<a href="https://www.ifm.eng.cam.ac.uk/people/mfld2/" target="_blank" rel="noopener noreferrer">Michael De Volder's</a> groups (<a href="https://www.phy.cam.ac.uk/" target="_blank" rel="noopener noreferrer">Physics</a>/<a href="http://www.eng.cam.ac.uk/" target="_blank" rel="noopener noreferrer">Engineering</a>) for my PhD project on light-rechargeable photobatteries</span>
+        </li>
+
+        <li>
+          <span class="news-date">(Jan 2021)</span>
+          <span class="news-text">Joining <a href="http://www.eng.cam.ac.uk/profiles/sh315" target="_blank" rel="noopener noreferrer">Stephan Hoffman's</a> group (ElecEng) for a lab-rotation on the characterization of 2D materials</span>
+        </li>
+
+        <li>
+          <span class="news-date">(Jan 2021)</span>
+          <span class="news-text">First author <a href="https://www.sciencedirect.com/science/article/pii/S2214993721000051?via%3Dihub" target="_blank" rel="noopener noreferrer">paper</a> on light-trapping in solar cells by Al-alloy plasmonic nanoparticles  published in <i>Sustainable Materials and Technologies</i></span>
+        </li>
+
+        <li>
+          <span class="news-date">(Nov 2020)</span>
+          <span class="news-text">Joining the groups of <a href="https://www.ceb.cam.ac.uk/directory/roisin-owens" target="_blank" rel="noopener noreferrer">Roisin Owens</a> (<a href="https://www.ceb.cam.ac.uk/" target="_blank" rel="noopener noreferrer">ChemEng</a>) and <a href="https://www.ch.cam.ac.uk/person/tpjk2" target="_blank" rel="noopener noreferrer">Tuomas Knowles</a> (<a href="https://www.ch.cam.ac.uk/" target="_blank" rel="noopener noreferrer">Chemistry</a>) for a lab-rotation on microfluidics for exosome detection</span>
+        </li>
+
+        <li>
+          <span class="news-date">(Nov 2020)</span>
+          <span class="news-text">One of only 8 recipients of the <a href="https://www.inae.in/innovative-student-projects-award/" target="_blank" rel="noopener noreferrer"><b>INAE Innovative Student Project Award</b></a> for my undergraduate thesis!</span>
+        </li>
+
+        <li>
+          <span class="news-date">(Sep 2020)</span>
+          <span class="news-text">Joined the University of Cambridge for an <a href="https://www.postgraduate.study.cam.ac.uk/courses/directory/pcphpdnst#:~:text=The%20vision%20of%20this%20MRes,interactions%20that%20support%20our%20vision." target="_blank" rel="noopener noreferrer">MRes+PhD in Nanoscience and Nanotechnology!</a></span>
+        </li>
+
+        <li>
+          <span class="news-date">(Sep 2020)</span>
+          <span class="news-text">Graduated from IIT Madras with a CGPA of 8.90. Phew!</span>
+        </li>
+
+        <li>
+          <span class="news-date">(Sep 2020)</span>
+          <span class="news-text">Received the <b>B. Krishnamurty Silver Medal</b> for the best undergraduate <a href="data/BTech Thesis_Arvind_Pujari_MM16B017 - Revision - June.pdf" target="_blank" rel="noopener noreferrer">thesis</a> in Metallurgical and Materials Engineering at IIT Madras!</span>
+        </li>
+
+        <li>
+          <span class="news-date">(Sep 2020)</span>
+          <span class="news-text">Received the <a href="data/sdsp.jpeg" target="_blank" rel="noopener noreferrer"><b>Shankar Dayal Sharma Gold Medal</b></a> for the best all-round performance by an undergrad at IIT Madras between 2016-2020!</span>
+        </li>
+
+        <li>
+          <span class="news-date">(Jul 2020)</span>
+          <span class="news-text">First author <a href="https://www.sciencedirect.com/science/article/pii/S0254058420307860?via%3Dihub" target="_blank" rel="noopener noreferrer">paper</a> on the plasmonic properties of Al-Cu core-shell nanoparticles published in <i>Materials Chemistry and Physics</i></span>
+        </li>
+
+        <li>
+          <span class="news-date">(Jun 2020)</span>
+          <span class="news-text">Defended my undergraduate <a href="data/BTech Thesis_Arvind_Pujari_MM16B017 - Revision - June.pdf" target="_blank" rel="noopener noreferrer">thesis</a> on modelling Al-based plasmonics at IIT Madras!</span>
+        </li>
+
+        <li>
+          <span class="news-date">(May 2019)</span>
+          <span class="news-text">Spending a summer at <a href="https://www.warsinger.com/" target="_blank" rel="noopener noreferrer">David Warsinger's</a> group at Purdue <a href="https://engineering.purdue.edu/ME" target="_blank" rel="noopener noreferrer">(MechEng)</a> working on inverse opals nanomembranes</span>
+        </li>
+
+        <li>
+          <span class="news-date">(Apr 2017)</span>
+          <span class="news-text"><a href="https://epaper.timesgroup.com/Olive/ODN/TimesOfIndia/shared/ShowArticle.aspx?doc=TOICH%2F2017%2F11%2F13&entity=Ar02301&sk=9EAE57B0&mode=text#" target="_blank" rel="noopener noreferrer">Work</a> on self-segrating smart dustbins featured in the Chennai Times!</span>
+        </li>
+
+        <li>
+          <span class="news-date">(May 2018)</span>
+          <span class="news-text">Spending a summer at <a href="https://www.kabeerjasuja.com/" target="_blank" rel="noopener noreferrer">Kabeer Jasuja's</a> group at IIT GN (<a href="https://iitgn.ac.in/academics/che/" target="_blank" rel="noopener noreferrer">(ChemEng)</a>) working on carbon quantum dots for mercury detection!</span>
+        </li>
+
+        <li>
+          <span class="news-date">(Apr 2017)</span>
+          <span class="news-text"><a href="https://timesofindia.indiatimes.com/home/education/five-iit-students-come-up-with-tech-that-fights-germs-and-cleans-toilet/articleshow/57952405.cms" target="_blank" rel="noopener noreferrer">Work</a> on a mechanism for toilet seat sanitation featured in the Times of India!</span>
+        </li>
+
+        <li>
+          <span class="news-date">(Mar 2017)</span>
+          <span class="news-text">Part of a team which received the <a href="https://gyti.techpedia.in/" target="_blank" rel="noopener noreferrer">GYTI Award</a> from the Government of India for our mechanism for toilet seat sanitation</span>
+        </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 
 
@@ -218,7 +349,7 @@
 
 <tr>
   <td style="padding:20px;width:25%;vertical-align:middle">
-    <img src="https://ars.els-cdn.com/content/image/1-s2.0-S2542435125000509-fx1_lrg.jpg"
+    <img src="https://ars.els-cdn.com/content/image/1-s2.0-S2542435125000509-gr1_lrg.jpg"
          alt="Photobattery architectures and operating principles"
          width="160" height="120" style="object-fit:contain">
   </td>
