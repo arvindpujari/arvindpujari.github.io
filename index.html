@@ -38,6 +38,45 @@
 }
 </script>
 	
+<style>
+/* Selected Publications: responsive images and mobile layout */
+.publications img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.publications td {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+  .publications,
+  .publications > tbody,
+  .publications > tbody > tr,
+  .publications > tbody > tr > td {
+    display: block;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+  .publications > tbody > tr {
+    margin-bottom: 24px;
+  }
+  .publications > tbody > tr > td:first-child {
+    padding: 12px 20px 8px !important;
+  }
+  .publications > tbody > tr > td:last-child {
+    padding: 0 20px 12px !important;
+  }
+  .publications img {
+    width: 160px;
+    max-width: 100%;
+    height: auto;
+  }
+  .publications p {
+    text-align: left !important;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -189,7 +228,7 @@
         </tbody></table>
 
 <!-- Keep all publication rows inside this single table. -->
-<table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:auto;table-layout:fixed">
+<table class="publications" style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:auto;table-layout:fixed">
   <tbody>
 <tr>
   <td style="padding:20px;width:25%;vertical-align:middle">
